@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lab 8</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  </head>
+<body>
+    <!-- Верхня частина сторінки -->
+    <header class="text-white text-center py-3">
+        <h1>Лабораторна 8</h1>
+        <p>Вивчення Bootstrap</p>
+    </header>
+        <!-- Навігація -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Мій сайт</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hobbits">Гобіти <i class="bi bi-flower1"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#elves">Ельфи <i class="bi bi-hourglass-split"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#dwarves">Дворфи <i class="bi bi-tools"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Основний контент -->
+    <div class="container my-4">
+        <div class="row">
+            <!-- Ліва колонка -->
+            <aside class="col-md-3">
+                <div class="p-3 nav-area">
+                    <h3>Навігація</h3>
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href="#shire"> Шир <i class="bi bi-house-heart-fill"></i></a></li>
+                        <li class="list-group-item"><a href="#rivendell"> Рівендел <i class="bi bi-magic"></i></a></li>
+                        <li class="list-group-item"><a href="#erebor"> Еребор <i class="bi bi-wind"></i></a></li>
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- Центральна колонка -->
+            <main class="col-md-9">
+                <h2 class="h2-main" >Середзем'я</h2>
+                <p>
+                    Ця сторінка про всесвіт Толкіна створена для вивчення Bootstrap та виконання лабораторної роботи 8 на тему "Бібліотека Bootstrap".
+                </p>
+                <a href="#dwarves" class="button btn btn-primary">Кнопка до дворфів</a>
+
+                <!-- Форма -->
+                <form class="mt-4 form1 form-box">
+                    <h2 class="h2-form">Приклад форми відправки</h2>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Електронна пошта</label>
+                        <input type="email" class="form-control" id="email" placeholder="Введіть електронну пошту">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Повідомлення</label>
+                        <textarea class="form-control" id="message" rows="3" placeholder="Введіть повідомлення"></textarea>
+                    </div>
+                    <button type="submit" class="button btn btn-success">Надіслати</button>
+                </form>
+
+
+                <!-- Гобіти -->
+                <section class="mb-4 folk-box" id="hobbits">
+                    <h3>Гобіти</h3>
+                    <p>
+                        Гобіти — маленький народ, що живе у комфортних норах. Вони відомі своєю гостинністю та любов'ю до їжі.
+                    </p>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="img/hob2.jpg" class="img-fluid rounded img-item" alt="Гобіт 1">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="img/hob3.jpg" class="img-fluid rounded img-item" alt="Гобіт 2">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="img/hob4.jpg" class="img-fluid rounded img-item" alt="Гобіт 3">
+                        </div>
+                    </div>
+                </section>
+
+                <!--Шир -->
+                <section class="mb-4 folk-box" id="shire">
+                    <h3>Шир</h3>
+                    <p>
+                        Місце це живуть багато гобітів.
+                    </p>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="img/shire2.jpg" class="img-fluid rounded img-item" alt="Шир 1">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="img/shire1.jpg" class="img-fluid rounded img-item" alt="Шир 2">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="img/shire3.jpg" class="img-fluid rounded img-item" alt="Шир 3">
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Ельфи -->
+                <section class="mb-4 folk-box" id="elves">
+                    <h3>Ельфи</h3>
+                    <p>
+                        Ельфи — витончені істоти, що живуть у лісах. Вони відомі своєю мудрістю, магічними здібностями та довголіттям.
+                    </p>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="img/elves1.jpg" class="img-fluid rounded img-item" alt="Ельф 1">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="img/elves2.jpg" class="img-fluid rounded img-item" alt="Ельф 2">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="img/elves3.jpg" class="img-fluid rounded img-item" alt="Ельф 3">
+                        </div>
+                    </div>
+                </section>
+
+                <!--Рівендел -->
+                <section class="mb-4 folk-box" id="rivendell">
+                    <h3>Рівендел</h3>
+                    <p>
+                        Місце це живуть багато ельфів.
+                    </p>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="img/rivendell1.jpg" class="img-fluid rounded img-item" alt="Рівендел 1">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="img/rivendell3.jpg" class="img-fluid rounded img-item" alt="Рівендел 2">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="img/rivendell2.jpg" class="img-fluid rounded img-item" alt="Рівендел 3">
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Гноми -->
+                <section class="mb-4 folk-box" id="dwarves">
+                    <h3>Дворфи</h3>
+                    <p>
+                        Дворфи — майстри ковальської справи та гірничої справи. Вони живуть у горах і відомі своєю витривалістю.
+                    </p>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="img/dwarves1.jpg" class="img-fluid rounded img-item" alt="Дворфи 1">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="img/dwarves2.jpg" class="img-fluid rounded img-item" alt="Дворфи 2">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="img/dwarves3.jpg" class="img-fluid rounded img-item" alt="Дворфи 3">
+                        </div>
+                    </div>
+                </section>
+
+                <!--Еребор -->
+                <section class="mb-4 folk-box" id="erebor">
+                    <h3>Еребор</h3>
+                    <p>
+                        Місце це живуть багато дворфів.
+                    </p>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="img/erebor1.jpg" class="img-fluid rounded img-item" alt="Еребор 1">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="img/erebor3.jpg" class="img-fluid rounded img-item" alt="Еребор 2">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="img/erebor2.jpg" class="img-fluid rounded img-item" alt="Еребор 3">
+                        </div>
+                    </div>
+                </section>
+
+            </main>
+        </div>
+    </div>
+
+    <!-- Нижня частина сторінки -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Ларчик Валерія</p>
+    </footer>
+
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>
